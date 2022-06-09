@@ -1,0 +1,32 @@
+<html>
+    <body bgcolor=#d4a3ae>
+
+        <center>
+
+        <h1> PCOS DETECTION </h1><br>
+        
+        <form method="POST", action="{{url_for('home')}}">
+           <b> Age :  <input type="text", name='a', placeholder="Age (yrs)"> <br><br>
+            Weight :  <input type="text", name='b', placeholder="Weight (Kg)"> <br><br>
+            Cycle length :  <input type="text", name='c', placeholder="Cycle length(days)"> <br><br>
+            Pregnant : <input type="text", name='d', placeholder="Pregnant(Yes/No)"> <br><br>
+            FSH/LH : <input type="text", name='e', placeholder="FSH/LH"> <br><br>
+            AMH : <input type="text", name='f', placeholder="AMH(ng/mL)"> <br><br>
+            Weight gain : <input type="text", name='g', placeholder="Weight gain(Yes/No)"> <br><br>
+            hair growth : <input type="text", name='h', placeholder="hair growth(Yes/No)"> <br><br>
+            Skin darkening: <input type="text", name='i', placeholder="Skin darkening (Yes/No)"> <br><br>
+            Pimples: <input type="text", name='j', placeholder="Pimples(Yes/No)"> <br><br>
+            Fast food (Y/N): <input type="text", name='k', placeholder="Fast food (Yes/No)"> <br><br>
+            Follicle No. (R): <input type="text", name='l', placeholder="Follicle No. (R)"> <br><br>
+            Avg. F size (L): <input type="text", name='m', placeholder="Avg. F size (L) (mm)"> <br><br><br>
+        
+        </b>
+            <input type="submit" , value='predict!' >
+        </form>
+
+        <!-- <img src='static\flower1.jpg' alt="flower"> -->
+        
+    </center>
+
+    </body>
+</html>
