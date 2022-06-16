@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  
+<body bgcolor=white>
+    <div class="row" style="background-color:rgb(227, 217, 222);"> <h1>kNOw PCOS</h1>
+    </div>
+    <div class="container" style="background-color:#f6b2c0;margin-left: 220px;margin-right: 220px;">
+    <center>
+    <h1>PCOS LEVEL DETECTION</h1>
+    <p>Hey, Are you tired of roaming around hospitals and diagnostics to 
+        check PCOS.Don't worry check your pcos level here
+         just by filling the below details</p>
+    <table>
+        <form method="POST", action="{{url_for('home')}}">
+            <tr>
+                <td>
+                    <label for="Age">
+                     Age
+                    </label>
+                </td>
+                <td><input type="text", name='a', placeholder="years">
+                </td>
+            </tr>
+          
+            <tr>
+                <td>
+                    <label for="weight">
+                     Weight
+                    </label>
+                </td>
+                <td><input type="text", name='b', placeholder="Kgs">
+                </td>
+            </tr>
+          
+            <tr>
+                <td>
+                    <label for="CycleLength">
+                      Cycle Length
+                    </label>
+                </td>
+                <td><input type="text", name='c', placeholder="days">
+                </td>
+            </tr>
+          
+            <tr>
+                <td>
+                    <label for="Pregnant">
+                     Pregnant
+                    </label>
+                </td>
+                <td><input type="text", name='d', placeholder="Yes/No">
+                </td>
+            </tr>
+          
+            <tr>
+                <td>
+                    <label for="fsh">
+                     FSH/LH
+                    </label>
+                </td>
+                <td><input type="text", name='e', placeholder="decimal">
+                </td>
+            </tr>
+          
+            <tr>
+                <td>
+                    <label for="AMH">
+                     AMH
+                    </label>
+                </td>
+                <td><input type="text", name='f', placeholder="decimal">
+                </td>
+            </tr>
+          
+            <tr>
+                <td>
+                    <label for="weightGain">
+                          weight gain
+                    </label>
+                </td>
+                <td><input type="text", name='g', placeholder="Yes/No">
+                </td>
+            </tr>
+          
+            <tr>
+                <td>
+                    <label for="hairGrowth">
+                      Hair Growth
+                    </label>
+                </td>
+                <td><input type="text", name='h', placeholder="Yes/No">
+                </td>
+            </tr>
+          
+            <tr>
+                <td>
+                    <label for="SkinDarkening">
+                     Skin Darkening
+                    </label>
+                </td>
+                <td><input type="text", name='i', placeholder="Yes/No">
+                </td>
+            </tr>
+          
+            <tr>
+                <td>
+                    <label for="pimples">
+                     pimples
+                    </label>
+                </td>
+                <td><input type="text", name='j', placeholder="Yes/No">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="FFood">
+                        Fast Food
+                    </label>
+                </td>
+                <td><input type="text", name='k', placeholder="Yes/No">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="FSize">
+                        Follicle size
+                    </label>
+                </td>
+                <td><input type="text", name='l', placeholder="number">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="AVGFNum">
+                        Average Follice number
+                    </label>
+                </td>
+                <td><input type="text", name='m', placeholder="in mm">
+                </td>
+            </tr>
+            </table>
+            <input type="submit" , value='predict!' style="margin-top: 10px;" >
+        </form>
+        <a href="http://localhost:4000/know">go back</a>
+    </div>
+
+</center>
+</body>
+  
+</html>

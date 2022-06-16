@@ -8,7 +8,7 @@ model = pickle.load(open('iri.pkl', 'rb'))
 
 @app.route('/')
 def man():
-    return render_template('home.html')
+    return render_template('checking.html')
 
 
 @app.route('/predict', methods=['POST'])

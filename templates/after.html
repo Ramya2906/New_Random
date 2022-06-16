@@ -7,17 +7,35 @@
         <h1>  PREDICTION :  </h1>
     
     {%if data == 0%}
-    <h1>NO-PCOS</h1>  
-    <!-- <img src='static\setosa.jpg'>   -->
+    <h1>Hurray, you don't have PCOD</h1>  
+    <h2>Maintain the same life style to safegaurd your ovaries and hormones :)</h2>
+    <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ53oxZV3rjltZFOUOj8mW1b9L9yq5i9dAd6A&usqp=CAU"  alt="hurray"> -->
+    <a href="http://localhost:4000/know">go back</a>
+    {% endif %}
+    {%if data == 1%}
+    <h1>PCOS Level -1</h1>
+    <h2>kindly take a ultra sound scanning and upload it to get more accurate results</h2>
+    <h2>oops! you seem to have PCOS :/. Don;t worry let's track and reverse it using kNOw PCOS application</h2> 
+    <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ53oxZV3rjltZFOUOj8mW1b9L9yq5i9dAd6A&usqp=CAU" alt="img"> -->
+    <a href="http://localhost:4000/know">go back</a>
+    {% endif %}
+    {%if data == 2%}
+    <h1>PCOS Level-2</h1> 
+    <h2>kindly take a ultra sound scanning and upload it to get more accurate results</h2>
+    <h2>Sorry, You have PCOD.But, Don't worry let's reverse it together by following good life style</h2> 
+    <a href="http://localhost:4000/know">go back</a>
 
-    {%else%}
-    <h1>PCOS</h1>
-    <!-- <img src='static\verci.jpg'> -->
-    
-    {%endif%}
+    {% endif %}
+    {%if data == 3%}
+    <h1>PCOS Level-3</h1>  
+    <h2>Consult a doctor and take medication to reverse PCOS level-3. Don't worry our PCOS community is there with you:)</h2>
+    <a href="http://localhost:4000/know">go back</a>
+
+    {% endif %}
 
         <br><br>
-    <a href='/'>go back to home page</a>
+        <h3>Use Upload Ultra-Sound scanning feature to get more accurate results</h3>
+    <a href="http://localhost:4000/know">go back</a>
 
     </center>
 
